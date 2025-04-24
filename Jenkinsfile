@@ -33,7 +33,7 @@ pipeline {
         }
        stage("Run App") {
            steps {
-               sh "docker run -d --name ${CONTAINER_NAME} -p 3419:5000 -e USER=adeola ${IMAGE_NAME}:v-0.0.${IMAGE_TAG}"
+               sh "docker run -d --name ${CONTAINER_NAME} -p 3420:5000 -e USER=adeola ${IMAGE_NAME}:v-0.0.${IMAGE_TAG}"
            }
        }
     }
